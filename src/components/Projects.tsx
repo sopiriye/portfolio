@@ -18,6 +18,7 @@ const projects: Project[] = [
     description:
       "Investment intelligence tool for portfolio monitoring and capital allocation — surfacing the signals that matter for allocation decisions.",
     stack: ["TypeScript", "NestJS", "PostgreSQL", "Prisma"],
+    href: "https://xeneport.vercel.app",
     tags: ["#FinTech", "#BackendEngineering", "#SystemDesign", "#TechnicalProductManagement"],
   },
   {
@@ -26,6 +27,7 @@ const projects: Project[] = [
     description:
       "Secure authentication system with login, role-based access, file uploads, and an admin dashboard built on a hardened PHP + MySQL stack.",
     stack: ["PHP", "MySQL", "Auth", "RBAC"],
+    href: "https://github.com/sopiriye/projectUserLog",
     tags: ["#BackendEngineering", "#Security", "#SystemDesign"],
   },
 ];
@@ -65,9 +67,14 @@ const Projects = () => {
               <div className="flex flex-1 flex-col p-6">
                 <div className="flex items-start justify-between gap-3">
                   <h3 className="text-xl font-semibold text-foreground">{p.name}</h3>
-                  <span className="grid h-9 w-9 place-items-center rounded-full bg-secondary text-muted-foreground transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
+                  <a
+                    href={p.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="grid h-9 w-9 place-items-center rounded-full bg-secondary text-muted-foreground transition-colors group-hover:bg-primary group-hover:text-primary-foreground"
+                  >
                     <ArrowUpRight className="h-4 w-4" />
-                  </span>
+                  </a>
                 </div>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.description}</p>
 
