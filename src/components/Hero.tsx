@@ -20,10 +20,10 @@ const Hero = () => {
           </div>
 
           <div className="text-center md:text-left">
-            <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-muted-foreground">
+            {/* <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-muted-foreground">
               <span className="h-1.5 w-1.5 rounded-full bg-accent-cyan" />
               Available for new opportunities
-            </span>
+            </span> */}
             <h1 className="mt-5 text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
               Sopiriye Robinson
             </h1>
